@@ -20,22 +20,24 @@ namespace WebApplication1TRY3
         protected void Button1_Click(Object sender, EventArgs e)
         {
 
-        SqlConnection sqlcon = new SqlConnection(@"server =.\SQLEXPRESS;database=saveVariablesDataBase;Integrated Security=true");
-            {
-                SqlCommand cmd = new SqlCommand("insert into logintbl values (,,,,) ", sqlcon);
+            //SqlConnection sqlcon = new SqlConnection(@"server =.\SQLEXPRESS;database=saveVariablesDataBase;Integrated Security=true");
+            //    {
+            //        SqlCommand cmd = new SqlCommand("insert into logintbl values (,,,,) ", sqlcon);
 
-                cmd.Parameters.AddWithValue("name", TextBox1.Text);
-                cmd.Parameters.AddWithValue("pass", TextBox2.Text);
-                cmd.Parameters.AddWithValue("city", TextBox3.Text);
-                cmd.Parameters.AddWithValue("gender", TextBox4.Text);
-                cmd.Parameters.AddWithValue("mail", TextBox5.Text);
+            //        cmd.Parameters.AddWithValue("name", TextBox1.Text);
+            //        cmd.Parameters.AddWithValue("pass", TextBox2.Text);
+            //        cmd.Parameters.AddWithValue("city", TextBox3.Text);
+            //        cmd.Parameters.AddWithValue("gender", TextBox4.Text);
+            //        cmd.Parameters.AddWithValue("mail", TextBox5.Text);
 
-                cmd.ExecuteNonQuery();
-                TextBox1.Text = "";
-                sqlcon.Close();
-            }
-            }
+            //        cmd.ExecuteNonQuery();
+            //        TextBox1.Text = "";
+            //        sqlcon.Close();
+            //    }
+        }
+    }
 }
+
 
 
 

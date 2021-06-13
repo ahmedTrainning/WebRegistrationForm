@@ -1,4 +1,6 @@
-﻿<%@ Page Title="title" Language="C#" AutoEventWireup="true" CodeFile="WebForm1fForRegistraion.aspx.cs" Inherits="WebApplication1TRY3.WebForm1fForRegistraion" %>  
+﻿<%@ Page Title="title" Language="C#" AutoEventWireup="true" CodeFile="WebForm1fForRegistraion.aspx.cs" Inherits="WebApplication1TRY3.WebForm1fForRegistraion" %>
+
+<%@ Register Assembly="System.Web.Mvc" Namespace="System.Web.Mvc" TagPrefix="cc1" %>  
 
   
 <!DOCTYPE html>  
@@ -7,60 +9,32 @@
 <head runat="server">  
     <title></title>  
 </head>  
-<body>  
-    <form id="form1" runat="server">  
-        <div>  
-            <table class="auto-style1">  
-                <tr>  
-                    <td>Name :</td>  
-                    <td>  
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>  
-                    </td>  
-  
-               </tr>  
-                <tr>  
-                    <td>Password</td>  
-                     <td> <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox></td>  
-                </tr>  
-                <tr>  
-                    <td>Confirm Password</td>  
-                    <td>  
-                        <asp:TextBox ID="TextBox3" runat="server" TextMode="Password"></asp:TextBox>  
-                    </td>  
-                </tr>  
-                <tr>  
-                    <td>City</td>  
-                    <td>  
-                        <asp:DropDownList ID="DropDownList1" runat="server">  
-                            <asp:ListItem Text="Select City" Value="select" Selected="True"></asp:ListItem>  
-                            <asp:ListItem Text="Bangalore" Value="Bangalore"></asp:ListItem>  
-                            <asp:ListItem Text="Mysore" Value="Mysore"></asp:ListItem>  
-                            <asp:ListItem Text="Hubli" Value="hubli"></asp:ListItem>  
-                        </asp:DropDownList>  
-                    </td>  
-                </tr>  
-                <tr>  
-                    <td>Gender</td>  
-                    <td>  
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">  
-                            <asp:ListItem>Male</asp:ListItem>  
-                            <asp:ListItem>Female</asp:ListItem>  
-                        </asp:RadioButtonList>  
-                    </td>  
-               </tr>  
-                <tr>  
-                    <td>Gmail</td>  
-                    <td>  
-                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>  
-                    </td>  
-                </tr>  
-                <tr>  
-                    <td>  
-                        <asp:Button ID="Button1" runat="server" Text="Button" />  
-                    </td>  
-                </tr>  
-            </table>  
-        </div>  
-    </form>  
+<body> 
+   <form id="clientForm" runat="server">  
+
+        <div style="text-align:center ;margin:auto; background-color:gray; border: 1px solid #000 ; border-radius:15px; width: 500px; height:500px;">
+
+            <br >            
+    <asp:Label ID="Namelbl" runat="server" Text="Name" style="font:italic,14px;color:white"></asp:Label>
+            <br />
+    <asp:TextBox ID="nametxt" placeholder=" full name" runat="server" MaxLength="100" Style="width:350px; border-radius:10px;" />
+            <br />
+    <asp:Label ID="IDlbl" runat="server" Text="ID" style="font:italic,14px;color:white"></asp:Label>
+            <br />
+    <asp:TextBox ID="CID" placeholder="Customer ID" runat="server"></asp:TextBox>
+            <br />
+    <asp:Label ID="Glbl" runat="server" Text="Group belong?" style="font:italic,14px;color:white"></asp:Label>
+            <br />
+    <asp:TextBox ID="Grouptxt" placeholder="Group name or number" runat="server"></asp:TextBox>
+            <br />
+            <br>
+            <div style="text-align:center ;margin:auto; background-color:wheat; border: 1px solid ; width: 499px; height:100px;">
+                <asp:Button ID="savebtn" runat="server" Text="save" Style="font:bold 12px arial; color:white; background-color:wheat;border-color:wheat" />
+</div>
+            </br>
+
+            </div>
+        </form>
+    
 </body>  
 </html>
