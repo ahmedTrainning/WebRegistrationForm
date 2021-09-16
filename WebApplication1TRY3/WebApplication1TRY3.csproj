@@ -267,13 +267,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm1fForRegistraion.aspx.cs">
-      <DependentUpon>WebForm1fForRegistraion.aspx</DependentUpon>
+    <Compile Include="mainForm.aspx.cs">
+      <DependentUpon>mainForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1fForRegistraion.aspx.designer.cs">
-      <DependentUpon>WebForm1fForRegistraion.aspx</DependentUpon>
+    <Compile Include="mainForm.aspx.designer.cs">
+      <DependentUpon>mainForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="addCustomers.aspx.cs">
+      <DependentUpon>addCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addCustomers.aspx.designer.cs">
+      <DependentUpon>addCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="showCustomers.aspx.cs">
+      <DependentUpon>showCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="showCustomers.aspx.designer.cs">
+      <DependentUpon>showCustomers.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -282,9 +296,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="mainForm.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -306,7 +320,8 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="WebForm1fForRegistraion.aspx" />
+    <Content Include="addCustomers.aspx" />
+    <Content Include="showCustomers.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
